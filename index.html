@@ -1,239 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Collection of Works">
-    <title>VO1LONG</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
-        .project {
-            margin-bottom: 2rem;
-            background: #fff;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .project h2 {
-            margin-top: 0;
-        }
-        .project p {
-            margin: 0.5rem 0;
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .gallery {
-            margin-top: 3rem;
-        }
-        .gallery h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        .gallery-item {
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .gallery-item img {
-            width: 100%;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-        .gallery-item img:hover {
-            transform: scale(1.1);
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: #fff;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-
-<header>
-    <h1>My Works</h1>
-    <p>For Example</p>
-</header>
-
-<div class="container">
-    <!-- SHOWREEL 2022 -->
-    <div class="project">
-        <h2>  </h2>
-        <p>Freestyle</p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/nLnUkCpzMS0" frameborder="0" allowfullscreen></iframe>
-        </div>
+  <header class="header">
+    <div class="profile-card">
+      <object data="profile-card.svg" type="image/svg+xml" class="profile-svg"></object>
     </div>
+  </header>
 
-    <!-- SHOWREEL ANIMATION 2022 -->
-    <div class="project">
-        <h2>  </h2>
-        <p>  </p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/Bepzzbme4OI" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
+  <main>
+    </section>
 
-
-    <!-- SHOWREEL AI + AE 2022 -->
-    <div class="project">
-        <h2>  </h2>
-        <p>  </p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/4IkhI2dFodk" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <!-- Little Gif For CORSICA -->
-    <div class="project">
-        <h2>  </h2>
-        <p>  </p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/ai7bAwLVY1g" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <!-- Social Video Full Create -->
-    <div class="project">
-        <h2> Video, Animation, Effects, Sound, Voice</h2>
-        <p>  </p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/qrw3CcYmF28" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-
-    <!-- Fun Video Tracking -->
-    <div class="project">
-        <h2>Бродский </h2>
-        <p>?Не выходи из комнаты</p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/yQrLTpLv408" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <!-- Logo Animation For Me -->
-    <div class="project">
-        <h2>Logo Animation</h2>
-        <p>Logo Animation</p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/rOFJhyoy-ZY" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-
-
-
-
-
-    <!-- Блок с изображениями -->
-    <div class="gallery">
-        <h2>Галерея работ</h2>
-        <div class="gallery-grid">
-            <!-- Banner Moonlight -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/AcCp6s6.png" alt="Bokeh Sunrise">
-            </div>
-            <!-- Areosto -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/EzCgxZ0.png" alt="New form of your experience">
-            </div>
-            <!-- Post addiction -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/IzZJmOH.png" alt="Morphium">
-            </div>
-            <!-- Banner For BikeShop -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/KJjrHJI.png" alt="BLACKCAT">
-            </div>
-            <!-- Fun Banner AMATERASU -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/YpSrJ9J.png" alt="Spiced">
-            </div>
-            <!-- Book Cover -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/9tcppTk.png" alt="Workplace">
-            </div>
-            <!-- Slides for a social media post in corporate colors and style -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/IzZJmOH.png" alt="Detective">
-            </div>
-            <!-- Slides for a social media post in corporate colors and style -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/LNYgEN6.png" alt="Tenan Screening">
-            </div>
-            <!-- Music Album Cover -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/uuMGts9.png" alt="Tenan Screening">
-            </div>
-            <!-- Logo and Sticker For Company -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/V8OYIF1.jpeg" alt="CORSICA">
-            </div>
-            <!-- Hand draw Freestyle -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/Sqi4vbh.png" alt="Show your hands">
-            </div>
-            <!-- Hand drawn Self-portrait -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/HZ1JWgi.png" alt="Me">
-            </div>
-            <!-- Hand drawn  -->
-            <div class="gallery-item">
-                <img src="https://i.imgur.com/X6fry7U.png" alt="Light of knowledge">
-            </div>
-
-            <!-- Добавьте больше изображений по мере необходимости -->
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2024 VO1LONG. Все права защищены.</p>
-</footer>
-
+    <section class="dynamic-graphics">
+      <h2></h2>
+      <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/nLnUkCpzMS0?autoplay=1&mute=1&loop=1&playlist=nLnUkCpzMS0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Bepzzbme4OI?autoplay=1&mute=1&loop=1&playlist=Bepzzbme4OI" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/4IkhI2dFodk?autoplay=1&mute=1&loop=1&playlist=4IkhI2dFodk" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ai7bAwLVY1g?autoplay=1&mute=1&loop=1&playlist=ai7bAwLVY1g" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/qrw3CcYmF28?autoplay=1&mute=1&loop=1&playlist=qrw3CcYmF28" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/bIlVUr2JcJo?autoplay=1&mute=1&loop=1&playlist=bIlVUr2JcJo" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
