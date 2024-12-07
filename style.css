@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  color: #fff;
+}
+
+.profile-card {
+  text-align: center;
+  width: 90%; /* Карточка занимает 90% ширины экрана, но не больше max-width */
+  margin: 0 auto; /* Центрируем карточку */
+}
+
+.profile-svg {
+  width: 100%; /* Карточка адаптивная */
+  height: auto;
+  border-radius: 8px; /* Немного скругляем углы */
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #6200ea;
+}
+
+.static-graphics .mosaic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.static-graphics img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.dynamic-graphics .video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Сетка из 3 колонок */
+  gap: 15px;
+}
+
+.dynamic-graphics iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .dynamic-graphics .video-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на небольших экранах */
+  }
+
+  .profile-svg {
+    max-height: 300px; /* Уменьшаем карточку на мобильных устройствах */
+  }
+}
+
+@media (max-width: 480px) {
+  .dynamic-graphics .video-grid {
+    grid-template-columns: 1fr; /* 1 колонка на очень узких экранах */
+  }
+}
+
+/* Общие стили для галереи */
+.image-gallery {
+  width: 80%; /* Общая ширина блока */
+  margin: 0 auto; /* Центрирование */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Отступы между секциями */
+}
+
+/* Колонка изображений */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.image-column img {
+  width: 100%; /* Изображения занимают всю ширину родителя */
+  height: auto;
+  border-radius: 12px; /* Закруглённые углы */
+}
+
+/* Сетка изображений */
+.image-grid {
+  display: grid;
+  gap: 15px; /* Расстояние между изображениями */
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr); /* Сетка из 3 колонок */
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr); /* Сетка из 2 колонок */
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Закруглённые углы */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки на меньших экранах */
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr; /* 1 колонка на узких экранах */
+  }
+
+  .image-column img {
+    max-width: 100%; /* Масштабируем изображения для мобильных устройств */
+  }
+}
