@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', Regular;
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
   color: #333;
   background-color: #f9f9f9;
 }
